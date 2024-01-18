@@ -1,0 +1,8 @@
+{
+  // Runs stree write command on saved file
+  "format_on_save": false,
+
+  // The path to your `stree` binary
+  // Example: /Users/josh/.asdf/shims/stree
+  "stree_command_path": ""
+}

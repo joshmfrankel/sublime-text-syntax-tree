@@ -4,7 +4,7 @@ import subprocess
 
 class SyntaxTreeOnSave(sublime_plugin.EventListener):
   def on_post_save_async(self, view):
-    settings = sublime.load_settings("syntax_tree.sublime-settings")
+    settings = sublime.load_settings("SyntaxTree.sublime-settings")
     stree_command_path = settings.get("stree_command_path")
 
     if not stree_command_path:
@@ -20,7 +20,7 @@ class SyntaxTreeOnSave(sublime_plugin.EventListener):
 class FormatSyntaxTreeCommand(sublime_plugin.TextCommand):
   def run(self, edit):
     view = self.view
-    settings = sublime.load_settings("syntax_tree.sublime-settings")
+    settings = sublime.load_settings("SyntaxTree.sublime-settings")
     stree_command_path = settings.get("stree_command_path")
 
     if not stree_command_path:

@@ -1,0 +1,36 @@
+[
+  {
+    "id": "preferences",
+    "children": [
+      {
+        "id": "package-settings",
+        "children": [
+          {
+            "caption": "SyntaxTree",
+            "id": "syntax-tree",
+            "children": [
+              {
+                "caption": "Settings",
+                "command": "edit_settings",
+                "args": {
+                  "base_file": "${packages}/SyntaxTree/SyntaxTree.sublime-settings",
+                  "user_file": "${packages}/User/SyntaxTree.sublime-settings",
+                  "default": ""
+                }
+              },
+              {
+                "caption": "Key Bindings",
+                "command": "edit_settings",
+                "args": {
+                  "base_file": "${packages}/SyntaxTree/SyntaxTree.sublime-keymap",
+                  "user_file": "${packages}/User/Default (${platform}).sublime-keymap",
+                  "default": ""
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
